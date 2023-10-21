@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nguyễn Hoàng Nam - A23030</title>
+  </head>
+  <body>
+    <form action="done.html" method="get">
+      <header>
+        <h1>Event Registration Form</h1>
+      </header>
+      <section>
+        <table cellspacing="15">
+          <tr>
+            <th>Username<span>*</span></th>
+            <td>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                required
+                oninput="username_F()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Password<span>*</span></th>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                placeholder="Password"
+                required
+                oninput="password_F()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Enter password again<span>*</span></th>
+            <td>
+              <input
+                type="password"
+                name="confirm-pass"
+                id="confirm-pass"
+                placeholder="Confirm Password"
+                required
+                oninput="confirmPass_F()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Email<span>*</span></th>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                oninput="email_F()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Mobile</th>
+            <td>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="(201) 555-0123"
+                pattern="201+\d{7}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Terms & Condition</th>
+            <td>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                onchange="checkBox_F()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="5"
+                readonly
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <input type="submit" value="SUBMIT" id="submit-btn" />
+            </td>
+          </tr>
+        </table>
+      </section>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
